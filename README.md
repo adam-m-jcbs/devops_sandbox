@@ -8,6 +8,10 @@ A repo for exploring devops tools/workflows/deployments.  It is mostly a
 
 [This video is nice for understanding DevOps generally](https://www.youtube.com/watch?v=1xo-0gCVhTU)
 
+This is a mess I made whilst watching that video:
+
+![geekin' out](assets/20200126_132439.jpg)
+
 # docker
 
 Please consult your system's relevant documentation for details on deploying
@@ -22,8 +26,9 @@ relatively simply within your own slight variation on the arch linux official
 releases.  Arch Linux ARM is an example of a successful downstream project that
 builds off of the excellent work of the Arch community.
 
-\*(relative to competitors, the closest of which I would argue is FreeBSD, though
-they lack as robust a community/adoption imo)
+\*(relative to competitors, the closest of which I would argue is FreeBSD, but
+that's a bit overkill for the purposes of this repo, and FreeBSD is even harder
+for most applications developers to work with than Arch is)
 
 Now that I've preached a bit on Arch, let's get to docker:
 
