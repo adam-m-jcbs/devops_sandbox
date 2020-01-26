@@ -44,11 +44,12 @@ docker info #this will serve as a basic check that the install worked
 
 ## helloworld
 
-Because Arch is well-designed, if you attempt to do `docker run helloworld`, it
-will fail.  The Arch Linux community has made the correct decision to have
-their infrastructure and critical components default to more secure practices.
-This includes things like ports needing to be explicitly opened instead of
-being open by default.  So do this:
+Because Arch is well-designed, if you attempt to do `docker run hello-world` or
+similar, it will fail (yes, even if you already pulled it).  The Arch Linux
+community has made the correct decision to have their infrastructure and
+critical components default to more secure practices.  This includes things
+like ports needing to be explicitly opened instead of being open by default.
+So do this:
 
 ```
 /usr/bin/dockerd -H tcp://0.0.0.0:4243 -H unix:///var/run/docker.sock
@@ -73,7 +74,7 @@ ExecStart=
 ExecStart=/usr/bin/dockerd -H tcp://0.0.0.0:4243 -H unix:///var/run/docker.sock
 ```
 
-Sorry, but docker helloworld will still fail.  Because you need to login (get account here: 
+Sorry, but docker hello-world will still fail.  Because you need to login (get account here: 
 hub.docker.com/) . Do
 ```
 docker login
